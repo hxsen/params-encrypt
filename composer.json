@@ -1,0 +1,27 @@
+{
+    "name": "hxsen/params-encrypt",
+    "description": "自己封装的参数加密扩展包",
+    "type": "library",
+    "authors": [
+        {
+            "name": "houxin",
+            "email": "hx@hxsen.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hxsen\\ParamsEncrypt\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hxsen\\ParamsEncrypt\\ServiceProvider"
+            ],
+            "aliases": {
+                "ParamsEncrypt": "Hxsen\\ParamsEncrypt\\Facade"
+            }
+        }
+    }
+}
